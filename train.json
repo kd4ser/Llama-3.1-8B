@@ -1,5 +1,4 @@
-Train 4:
-
+[
 {
 "instruct": "Avaliar eficácia",
 "input": "tratamento com calêndula e condutância da pele",
@@ -60,10 +59,6 @@ Train 4:
 "input": "dados de cortisol e cultivo consorciado",
 "output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
 }
-
-
-Train 5:
-
 {
 "instruct": "Prever resposta",
 "input": "ao tratamento com cortisol e passiflora",
@@ -124,10 +119,6 @@ Train 5:
 "input": "tratamento com passiflora e microbiota",
 "output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
 }
-
-
-Train 5:
-
 {
 "instruct": "Modelar resposta",
 "input": "sistema imune à equinácea e microbiota",
@@ -193,10 +184,6 @@ Train 5:
 "input": "sono e resposta à camomila",
 "output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n}"
 }
-
-
-Train 6:
-
 {
 "instruct": "Avaliar eficácia",
 "input": "tratamento com camomila e qualidade do sono",
@@ -257,3 +244,4 @@ Train 6:
 "input": "atenção à calêndula e qualidade do sono",
 "output": "digraph {\n  node [shape=circle];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
 }
+]
