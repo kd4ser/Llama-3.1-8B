@@ -1,0 +1,259 @@
+Train 4:
+
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com calêndula e condutância da pele",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Calêndula\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Dosagem de Calêndula\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "sistema gastrointestinal à calêndula e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula\"];\n  \"Microbiota Intestinal\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de EDA e blend de ansiolíticos",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com EDA e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "condutância da pele e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à calêndula e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de cortisol e cultivo de camomila",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "níveis de cortisol e resposta à camomila",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Cortisol\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com camomila e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "sistema imune à equinácea e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de cortisol e cultivo consorciado",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+
+
+Train 5:
+
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com cortisol e passiflora",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Cortisol\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Níveis de Cortisol\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "cortisol e resposta à calêndula",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Cortisol\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com equinácea e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "sistema gastrointestinal à passiflora e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Passiflora\" -> \"Microbiota Intestinal\" [label=\"Modula\"];\n  \"Microbiota Intestinal\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de cortisol e blend de ansiolíticos",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com cortisol e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Cortisol\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Níveis de Cortisol\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "cortisol e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Cortisol\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à calêndula e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de microbiota e cultivo de passiflora",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "microbiota e resposta à passiflora",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Passiflora\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com passiflora e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Passiflora\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Dosagem de Passiflora\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+
+
+Train 5:
+
+{
+"instruct": "Modelar resposta",
+"input": "sistema imune à equinácea e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de microbiota e cultivo consorciado",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com microbiota e camomila",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Resposta ao Tratamento (Camomila)\" [label=\"PLS-SEM\"];\n  \"Composição da Microbiota\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "microbiota e resposta à calêndula",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com equinácea e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "sistema gastrointestinal à camomila e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Camomila\" -> \"Microbiota Intestinal\" [label=\"Modula\"];\n  \"Microbiota Intestinal\" -> \"Motilidade Intestinal\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Motilidade Intestinal\" [label=\"Influencia (NCA)\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de microbiota e blend de ansiolíticos",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com microbiota e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Composição da Microbiota\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "microbiota e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à calêndula e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de sono e cultivo de camomila",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "sono e resposta à camomila",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\"];\n}"
+}
+
+
+Train 6:
+
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com camomila e qualidade do sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Camomila\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "sistema imune à equinácea e sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\"];\n  \"Sistema Imune\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de sono e cultivo consorciado",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com sono e passiflora",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\"];\n  \"Qualidade do Sono\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "sono e resposta à calêndula",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com equinácea e qualidade do sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Dosagem de Equinácea\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Dosagem de Equinácea\" -> \"Sistema Imune\" [label=\"NCA\"];\n  \"Sistema Imune\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "sistema gastrointestinal à calêndula e sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula\"];\n  \"Microbiota Intestinal\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de sono e blend de ansiolíticos",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com sono e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Qualidade do Sono\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "sono e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend e qualidade do sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à calêndula e qualidade do sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
