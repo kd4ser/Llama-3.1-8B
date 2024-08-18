@@ -1,202 +1,202 @@
 [
-{
-instruct: "Modelar resposta",
-input: "atenção à camomila e qualidade do sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Camomila\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de camomila",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "atenção à calêndula e qualidade do sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de calêndula",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "atenção à blend personalizado e qualidade do sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e blend de ansiolíticos personalizados",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Avaliar eficácia",
-input: "tratamento com camomila e qualidade do sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem de Camomila\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de camomila",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Avaliar eficácia",
-input: "tratamento com blend e qualidade do sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e blend de ansiolíticos",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "atenção à passiflora e qualidade do sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Passiflora\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de passiflora",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "sistema gastrointestinal à calêndula e sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de calêndula",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "sistema imune à equinácea e sono",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo consorciado",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Prever resposta",
-input: "ao tratamento com sono e passiflora",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Qualidade do Sono\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Qualidade do Sono\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de passiflora",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Identificar biomarcadores",
-input: "sono e resposta à camomila",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de sono e cultivo de camomila",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "sistema gastrointestinal à passiflora e cortisol",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Microbiota Intestinal\" [label=\"Modula\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de cortisol e cultivo de passiflora",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Prever resposta",
-input: "ao tratamento com cortisol e passiflora",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Níveis de Cortisol\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Níveis de Cortisol\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de cortisol e cultivo de passiflora",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "sistema imune à equinácea e cortisol",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de cortisol e cultivo de equinácea",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Identificar biomarcadores",
-input: "cortisol e resposta à calêndula",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Níveis de Cortisol\" -> \"Biomarcadores\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de cortisol e cultivo de calêndula",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Avaliar eficácia",
-input: "tratamento com camomila e cortisol",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem de Camomila\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de cortisol e cultivo de camomila",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "atenção à camomila e EDA",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Camomila\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de EDA e cultivo de camomila",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Modelar resposta",
-input: "sistema gastrointestinal à calêndula e EDA",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de EDA e cultivo de calêndula",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Avaliar eficácia",
-input: "tratamento com calêndula e condutância da pele",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem de Calêndula\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Dosagem de Calêndula\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de EDA e cultivo de calêndula",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Identificar biomarcadores",
-input: "condutância da pele e resposta ao blend",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de EDA e blend de ansiolíticos",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-},
-{
-instruct: "Prever resposta",
-input: "ao tratamento com EDA e blend",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n}"
-},
-{
-instruct: "Analisar correlação",
-input: "dados de EDA e blend de ansiolíticos",
-output: "digraph {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n}"
-}
+    {
+        "instruction": "Modelar resposta",
+        "input": "atenção à camomila e qualidade do sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Camomila\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de camomila",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "atenção à calêndula e qualidade do sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Calêndula\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Calêndula\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de calêndula",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "atenção à blend personalizado e qualidade do sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e blend de ansiolíticos personalizados",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend Personalizado\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Avaliar eficácia",
+        "input": "tratamento com camomila e qualidade do sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem de Camomila\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de camomila",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Avaliar eficácia",
+        "input": "tratamento com blend e qualidade do sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e blend de ansiolíticos",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "atenção à passiflora e qualidade do sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Passiflora\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de passiflora",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "sistema gastrointestinal à calêndula e sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de calêndula",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "sistema imune à equinácea e sono",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo consorciado",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Consorciado)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Prever resposta",
+        "input": "ao tratamento com sono e passiflora",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Qualidade do Sono\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Qualidade do Sono\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de passiflora",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Identificar biomarcadores",
+        "input": "sono e resposta à camomila",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Biomarcadores\" -> \"Resposta à Camomila\" [label=\"Predizem\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de sono e cultivo de camomila",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "sistema gastrointestinal à passiflora e cortisol",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Passiflora\" -> \"Microbiota Intestinal\" [label=\"Modula\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de cortisol e cultivo de passiflora",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Prever resposta",
+        "input": "ao tratamento com cortisol e passiflora",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Níveis de Cortisol\" -> \"Resposta ao Tratamento (Passiflora)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Níveis de Cortisol\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Passiflora\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de cortisol e cultivo de passiflora",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Passiflora)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "sistema imune à equinácea e cortisol",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Equinácea\" -> \"Sistema Imune\" [label=\"Modula\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Sistema Imune\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de cortisol e cultivo de equinácea",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Equinácea)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Identificar biomarcadores",
+        "input": "cortisol e resposta à calêndula",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Níveis de Cortisol\" -> \"Biomarcadores\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Biomarcadores\" -> \"Resposta à Calêndula\" [label=\"Predizem\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de cortisol e cultivo de calêndula",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Avaliar eficácia",
+        "input": "tratamento com camomila e cortisol",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem de Camomila\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Dosagem de Camomila\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de cortisol e cultivo de camomila",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "atenção à camomila e EDA",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Consumo de Camomila\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Consumo de Camomila\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de EDA e cultivo de camomila",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Camomila)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Modelar resposta",
+        "input": "sistema gastrointestinal à calêndula e EDA",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Calêndula\" -> \"Microbiota Intestinal\" [label=\"Modula\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"blue\"];\n  \"Microbiota Intestinal\" -> \"Ansiedade\" [label=\"Modula (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de EDA e cultivo de calêndula",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Avaliar eficácia",
+        "input": "tratamento com calêndula e condutância da pele",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Dosagem de Calêndula\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Dosagem de Calêndula\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de EDA e cultivo de calêndula",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Parâmetros de Cultivo (Calêndula)\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Identificar biomarcadores",
+        "input": "condutância da pele e resposta ao blend",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de EDA e blend de ansiolíticos",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    },
+    {
+        "instruction": "Prever resposta",
+        "input": "ao tratamento com EDA e blend",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\", color=\"blue\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\", color=\"blue\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\", color=\"blue\"];\n    }"
+    },
+    {
+        "instruction": "Analisar correlação",
+        "input": "dados de EDA e blend de ansiolíticos",
+        "output": "digraph     {\n  node [shape=circle, fontname=\"Calibri Bold\"];\n  edge [fontname=\"Calibri Bold\"];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\", color=\"green\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\", color=\"green\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\", color=\"green\"];\n    }"
+    }
 ]
